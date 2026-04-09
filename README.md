@@ -21,7 +21,7 @@ The codebase supports:
 - PyTorch-compatible environment
 - ecobee building data prepared into `house_data_csvs0/`
 - solar covariates from NREL NSRDB
-- the Python packages listed in [requirements.txt](/D:/Dropbox/liangrui-personal/26_CodeFiles/ThermoStill/requirements.txt)
+- the Python packages listed in [requirements.txt](requirements.txt)
 
 Install the environment with:
 
@@ -105,7 +105,7 @@ python main.py `
 
 ## Shell Script
 
-A shell entrypoint is provided in [run_thermostill.sh](/D:/Dropbox/liangrui-personal/26_CodeFiles/ThermoStill/scripts/run_thermostill.sh):
+A shell entrypoint is provided in [run_thermostill.sh](scripts/run_thermostill.sh):
 
 ```bash
 bash scripts/run_thermostill.sh
@@ -133,13 +133,13 @@ Running the training pipeline writes artifacts to:
 
 ## Repository Structure
 
-- [main.py](/D:/Dropbox/liangrui-personal/26_CodeFiles/ThermoStill/main.py): command-line entrypoint
-- [exp/exp_thermostill.py](/D:/Dropbox/liangrui-personal/26_CodeFiles/ThermoStill/exp/exp_thermostill.py): end-to-end training loop
-- [models/grey_box](/D:/Dropbox/liangrui-personal/26_CodeFiles/ThermoStill/models/grey_box): RC thermal dynamics models
-- [models/rl](/D:/Dropbox/liangrui-personal/26_CodeFiles/ThermoStill/models/rl): actor, critic, and temporal encoder
-- [models/tsfm/tsfm.py](/D:/Dropbox/liangrui-personal/26_CodeFiles/ThermoStill/models/tsfm/tsfm.py): teacher wrappers
-- [data_provider](/D:/Dropbox/liangrui-personal/26_CodeFiles/ThermoStill/data_provider): data loading and cached teacher predictions
-- [data/raw/ecobee/preprocess.py](/D:/Dropbox/liangrui-personal/26_CodeFiles/ThermoStill/data/raw/ecobee/preprocess.py): project-side ecobee preprocessing
+- [main.py](main.py): command-line entrypoint
+- [exp/exp_thermostill.py](exp/exp_thermostill.py): end-to-end training loop
+- [models/grey_box](models/grey_box): RC thermal dynamics models
+- [models/rl](models/rl): actor, critic, and temporal encoder
+- [models/tsfm/tsfm.py](models/tsfm/tsfm.py): teacher wrappers
+- [data_provider](data_provider): data loading and cached teacher predictions
+- [data/raw/ecobee/preprocess.py](data/raw/ecobee/preprocess.py): project-side ecobee preprocessing
 
 ## Citation
 
